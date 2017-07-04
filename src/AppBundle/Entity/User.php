@@ -8,6 +8,7 @@
 
 namespace AppBundle\Entity;
 
+use Ambta\DoctrineEncryptBundle\Configuration\Encrypted;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -31,6 +32,7 @@ class User
     private $username;
     /**
      * @ORM\Column(type="string")
+     * @Encrypted()
      */
     private $password;
 
